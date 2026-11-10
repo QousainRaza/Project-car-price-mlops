@@ -1,0 +1,10 @@
+{
+  "rows_in": 60550,
+  "missing_values": 459,
+  "year_out_of_range": 33,
+  "engine_out_of_range": 62,
+  "bad_price_or_mileage": 0,
+  "duplicates": 480,
+  "rows_out": 59516,
+  "rows_removed": 1034
+}

@@ -1,0 +1,26 @@
+services:
+  mlflow:
+    build: {context: ., dockerfile: docker/Dockerfile.mlflow}
+    ports: ["5000:5000"]
+    volumes: ["./mlflow-data:/data"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/health')"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build: {context: ., dockerfile: docker/Dockerfile.api}
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000      # service name, not localhost
+    ports: ["8000:8000"]
+    depends_on:
+      mlflow: {condition: service_healthy}
+
+  dashboard:
+    build: {context: ., dockerfile: docker/Dockerfile.dashboard}
+    environment:
+      API_URL: http://api:8000
+    ports: ["8501:8501"]
+    volumes: ["./reports:/app/reports"]
+    depends_on: [api]

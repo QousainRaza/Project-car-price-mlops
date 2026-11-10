@@ -1,0 +1,24 @@
+name: ci
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: pytest -q
+      - run: python -m src.quality_gate      # fails if the model is not clearly better than guessing
+
+  docker:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -f docker/Dockerfile.api -t car-price-api .
+      - run: docker build -f docker/Dockerfile.dashboard -t car-price-dashboard .
+      - run: docker build -f docker/Dockerfile.mlflow -t car-price-mlflow .

@@ -1,0 +1,46 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "brand",
+      "car_model",
+      "city",
+      "fuel",
+      "transmission",
+      "car_age",
+      "mileage",
+      "engine_cc"
+    ],
+    "data": [
+      [
+        "Honda",
+        "Honda Civic",
+        "Karachi",
+        "Petrol",
+        "Automatic",
+        22,
+        182000.0,
+        1500.0
+      ],
+      [
+        "Toyota",
+        "Toyota Corolla",
+        "Punjab",
+        "Petrol",
+        "Automatic",
+        5,
+        59000.0,
+        1800.0
+      ],
+      [
+        "Suzuki",
+        "Suzuki Mehran",
+        "Islamabad",
+        "Petrol",
+        "Manual",
+        13,
+        55000.0,
+        796.0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.18
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+is_signature_from_type_hint: false
+mlflow_version: 2.22.5
+model_size_bytes: 8365813
+model_uuid: ef6aaceac88a4e148ed486d91e750a18
+prompts: null
+run_id: ad82b8a745f447d3895ba500760e4460
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "brand", "required": true}, {"type": "string",
+    "name": "car_model", "required": true}, {"type": "string", "name": "city", "required":
+    true}, {"type": "string", "name": "fuel", "required": true}, {"type": "string",
+    "name": "transmission", "required": true}, {"type": "long", "name": "car_age",
+    "required": true}, {"type": "double", "name": "mileage", "required": true}, {"type":
+    "double", "name": "engine_cc", "required": true}]'
+  outputs: '[{"type": "float", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-11-10 11:59:42.631134'

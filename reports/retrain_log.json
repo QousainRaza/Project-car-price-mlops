@@ -1,0 +1,14 @@
+{
+  "decision": "PROMOTED",
+  "metric": "mae",
+  "old_score": 1958995.8225160257,
+  "new_score": 1628802.6001602565,
+  "old_rmse": 4112796.9040747327,
+  "new_rmse": 4586660.8042694805,
+  "drift_share": 0.875,
+  "holdout_rows": 312,
+  "train_rows": 54811,
+  "version": "2",
+  "api_reloaded": true,
+  "time": "2026-11-10T06:10:47+00:00"
+}

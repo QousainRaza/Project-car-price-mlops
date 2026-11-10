@@ -1,0 +1,7 @@
+{
+  "new_batch": 3,
+  "share_drifted": 0.875,
+  "drifted_columns": 7,
+  "total_columns": 8,
+  "drift_detected": true
+}

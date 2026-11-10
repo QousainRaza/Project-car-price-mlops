@@ -1,0 +1,413 @@
+{
+  "brands": [
+    "Suzuki",
+    "Toyota",
+    "Honda",
+    "Daihatsu",
+    "Nissan",
+    "Hyundai",
+    "KIA",
+    "Mitsubishi",
+    "Mercedes Benz",
+    "Changan",
+    "MG",
+    "Haval",
+    "Audi",
+    "Mazda",
+    "FAW",
+    "Prince",
+    "DFSK",
+    "BMW",
+    "Proton",
+    "JAC",
+    "Lexus",
+    "Peugeot",
+    "Chevrolet",
+    "Subaru",
+    "Chery",
+    "Daewoo",
+    "Jeep",
+    "Range Rover",
+    "United",
+    "Ford",
+    "BAIC",
+    "Isuzu",
+    "Jetour",
+    "Land Rover",
+    "Porsche",
+    "Volkswagen",
+    "Datsun",
+    "JW",
+    "Sogo",
+    "SsangYong"
+  ],
+  "models_by_brand": {
+    "Suzuki": [
+      "Suzuki Mehran",
+      "Suzuki Alto",
+      "Suzuki Cultus",
+      "Suzuki Wagon",
+      "Suzuki Bolan",
+      "Suzuki Swift",
+      "Suzuki Every",
+      "Suzuki Khyber",
+      "Suzuki Baleno",
+      "Suzuki Liana",
+      "Suzuki Ravi",
+      "Suzuki Margalla",
+      "Suzuki FX GA",
+      "Suzuki Hustler",
+      "Suzuki Jimny",
+      "Suzuki Potohar",
+      "Suzuki APV",
+      "Suzuki FX",
+      "Suzuki Spacia",
+      "Suzuki Vitara",
+      "Suzuki Kei",
+      "Suzuki Ciaz",
+      "Suzuki MR Wagon",
+      "Suzuki Xbee",
+      "Suzuki Cervo",
+      "Suzuki Mega"
+    ],
+    "Toyota": [
+      "Toyota Corolla",
+      "Toyota Vitz",
+      "Toyota Yaris",
+      "Toyota Passo",
+      "Toyota Raize",
+      "Toyota Prado",
+      "Toyota Prius",
+      "Toyota Hilux",
+      "Toyota Land",
+      "Toyota Aqua",
+      "Toyota Fortuner",
+      "Toyota C-HR",
+      "Toyota Premio",
+      "Toyota Surf",
+      "Toyota Mark",
+      "Toyota Crown",
+      "Toyota Belta",
+      "Toyota Pixis",
+      "Toyota Hiace",
+      "Toyota Sienta",
+      "Toyota Platz",
+      "Toyota Camry",
+      "Toyota Probox",
+      "Toyota Rush",
+      "Toyota Roomy",
+      "Toyota Harrier",
+      "Toyota Starlet",
+      "Toyota Corona",
+      "Toyota 86",
+      "Toyota Allion",
+      "Toyota Duet",
+      "Toyota Rav4",
+      "Toyota Tundra",
+      "Toyota IST",
+      "Toyota Fj Cruiser",
+      "Toyota Town",
+      "Toyota Voxy",
+      "Toyota Noah",
+      "Toyota Aygo",
+      "Toyota Cressida"
+    ],
+    "Honda": [
+      "Honda Civic",
+      "Honda City",
+      "Honda Vezel",
+      "Honda BR-V",
+      "Honda N Wgn",
+      "Honda Accord",
+      "Honda Fit",
+      "Honda N Box",
+      "Honda N One",
+      "Honda HR-V",
+      "Honda Insight",
+      "Honda Freed",
+      "Honda Grace",
+      "Honda Life",
+      "Honda Acty",
+      "Honda CR-Z",
+      "Honda CR-V",
+      "Honda Airwave",
+      "Honda Zest",
+      "Honda Vamos",
+      "Honda N-Van",
+      "Honda Cross",
+      "Honda Spike"
+    ],
+    "Daihatsu": [
+      "Daihatsu Mira",
+      "Daihatsu Cuore",
+      "Daihatsu Move",
+      "Daihatsu Hijet",
+      "Daihatsu Charade",
+      "Daihatsu Rocky",
+      "Daihatsu Taft",
+      "Daihatsu Tanto",
+      "Daihatsu Cast",
+      "Daihatsu Boon",
+      "Daihatsu Terios",
+      "Daihatsu Atrai",
+      "Daihatsu Copen",
+      "Daihatsu Esse",
+      "Daihatsu Thor"
+    ],
+    "Nissan": [
+      "Nissan Dayz",
+      "Nissan Sunny",
+      "Nissan Note",
+      "Nissan Clipper",
+      "Nissan Moco",
+      "Nissan Juke",
+      "Nissan Roox",
+      "Nissan Serena",
+      "Nissan AD Van",
+      "Nissan Kicks",
+      "Nissan Otti",
+      "Nissan March",
+      "Nissan Wingroad",
+      "Nissan Tiida",
+      "Nissan Bluebird",
+      "Nissan Navara",
+      "Nissan Pino",
+      "Nissan Patrol",
+      "Nissan X Trail",
+      "Nissan 350Z",
+      "Nissan Other"
+    ],
+    "Hyundai": [
+      "Hyundai Santro",
+      "Hyundai Tucson",
+      "Hyundai Sonata",
+      "Hyundai Elantra",
+      "Hyundai Shehzore",
+      "Hyundai Santa",
+      "Hyundai Excel",
+      "Hyundai H-100"
+    ],
+    "KIA": [
+      "KIA Sportage",
+      "KIA Picanto",
+      "KIA Sorento",
+      "KIA Stonic",
+      "KIA Classic",
+      "KIA Spectra",
+      "KIA Carnival",
+      "KIA Pride"
+    ],
+    "Mitsubishi": [
+      "Mitsubishi Pajero",
+      "Mitsubishi Lancer",
+      "Mitsubishi Ek Wagon",
+      "Mitsubishi EK X",
+      "Mitsubishi Mirage",
+      "Mitsubishi EK Custom",
+      "Mitsubishi Minicab",
+      "Mitsubishi Galant",
+      "Mitsubishi Rvr",
+      "Mitsubishi L200"
+    ],
+    "Mercedes Benz": [
+      "Mercedes Benz C Class",
+      "Mercedes Benz E Class",
+      "Mercedes Benz S Class",
+      "Mercedes Benz CLA",
+      "Mercedes Benz SLK",
+      "Mercedes Benz A Class",
+      "Mercedes Benz CLK",
+      "Mercedes Benz G Class"
+    ],
+    "Changan": [
+      "Changan Karvaan",
+      "Changan Alsvin",
+      "Changan Oshan",
+      "Changan M9 Sherpa",
+      "Changan Kalam"
+    ],
+    "MG": [
+      "MG HS Trophy",
+      "MG HS 1.5",
+      "MG HS PHEV",
+      "MG HS Essence",
+      "MG ZS 1.5L",
+      "MG HS"
+    ],
+    "Haval": [
+      "Haval H6 HEV",
+      "Haval Jolion",
+      "Haval H6 1.5T",
+      "Haval H6 2.0T",
+      "Haval H6 PHEV"
+    ],
+    "Audi": [
+      "Audi A5 1.4",
+      "Audi A6 1.8",
+      "Audi A4 1.4",
+      "Audi A3 1.2",
+      "Audi A4 1.8",
+      "Audi A5 1.8",
+      "Audi A3 1.8",
+      "Audi Q7 3.0",
+      "Audi Q7 4.2",
+      "Audi A5"
+    ],
+    "Mazda": [
+      "Mazda Flair",
+      "Mazda Carol",
+      "Mazda RX8",
+      "Mazda Scrum",
+      "Mazda 626"
+    ],
+    "FAW": [
+      "FAW X-PV",
+      "FAW V2 VCT-i",
+      "FAW Carrier",
+      "FAW Sirius",
+      "FAW V2"
+    ],
+    "Prince": [
+      "Prince Pearl",
+      "Prince K07"
+    ],
+    "DFSK": [
+      "DFSK Glory"
+    ],
+    "BMW": [
+      "BMW 5 Series",
+      "BMW 7 Series",
+      "BMW 3 Series",
+      "BMW X1 sDrive18i"
+    ],
+    "Proton": [
+      "Proton Saga",
+      "Proton X70"
+    ],
+    "JAC": [
+      "JAC T9 Hunter",
+      "JAC X200",
+      "JAC T9"
+    ],
+    "Lexus": [
+      "Lexus LX Series",
+      "Lexus RX Series",
+      "Lexus CT200h"
+    ],
+    "Peugeot": [
+      "Peugeot 2008"
+    ],
+    "Chevrolet": [
+      "Chevrolet Exclusive",
+      "Chevrolet Joy",
+      "Chevrolet Optra"
+    ],
+    "Subaru": [
+      "Subaru Stella",
+      "Subaru Pleo",
+      "Subaru Sambar"
+    ],
+    "Chery": [
+      "Chery Tiggo",
+      "Chery QQ 0.8",
+      "Chery QQ"
+    ],
+    "Daewoo": [
+      "Daewoo Racer",
+      "Daewoo Cielo"
+    ],
+    "Jeep": [
+      "Jeep M 151",
+      "Jeep Wrangler",
+      "Jeep CJ 5",
+      "Jeep Gladiator"
+    ],
+    "Range Rover": [
+      "Range Rover Autobiography",
+      "Range Rover Vogue",
+      "Range Rover Sport"
+    ],
+    "United": [
+      "United Bravo",
+      "United Alpha"
+    ],
+    "Ford": [
+      "Ford F 150",
+      "Ford Ranger"
+    ],
+    "BAIC": [
+      "BAIC BJ40"
+    ],
+    "Isuzu": [
+      "Isuzu D-Max"
+    ],
+    "Jetour": [
+      "Jetour Dashing"
+    ],
+    "Land Rover": [
+      "Land Rover Defender"
+    ],
+    "Porsche": [
+      "Porsche Cayenne",
+      "Porsche Panamera"
+    ],
+    "Volkswagen": [
+      "Volkswagen Beetle"
+    ],
+    "Datsun": [
+      "Datsun 120"
+    ],
+    "JW": [
+      "JW Forland"
+    ],
+    "Sogo": [
+      "Sogo Pickup"
+    ],
+    "SsangYong": [
+      "SsangYong Rexton"
+    ]
+  },
+  "cities": [
+    "Islamabad",
+    "Lahore",
+    "Punjab",
+    "Sindh",
+    "Karachi",
+    "Un-Registered",
+    "Rawalpindi",
+    "Multan",
+    "Peshawar",
+    "Faisalabad",
+    "Abbottabad",
+    "Adda jahan khan",
+    "Sialkot",
+    "Gujranwala",
+    "Bahawalpur",
+    "Hyderabad",
+    "Quetta",
+    "Rahim Yar Khan",
+    "Sargodha",
+    "Mirpur A.K.",
+    "Gujrat",
+    "Sahiwal",
+    "Swat",
+    "Mardan",
+    "Okara",
+    "Jhelum",
+    "Muzaffarabad",
+    "Sheikhupura",
+    "Vehari",
+    "Kohat"
+  ],
+  "fuels": [
+    "CNG",
+    "Diesel",
+    "Hybrid",
+    "LPG",
+    "Petrol"
+  ],
+  "transmissions": [
+    "Automatic",
+    "Manual"
+  ]
+}
