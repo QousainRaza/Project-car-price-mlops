@@ -5,14 +5,6 @@ Predict a used car's price from a CSV, and run it like a product:
 
 > Batches are SIMULATED from one CSV (batch 3 = newer cars, prices x1.25) to demo drift. Say this in class.
 
-## Project map
-```
-data/raw/cars_raw.csv     original data         src/    pipeline code
-data/batches/             4 simulated batches   api/    FastAPI service
-reports/                  drift + EDA outputs   dashboard/  Streamlit app
-tests/                    13 pytest tests       docker/, .github/workflows/ci.yml
-```
-
 ---
 ## PART A: Run it locally, end to end
 
@@ -98,28 +90,3 @@ Stop: `docker compose down`.
 Push to GitHub. `.github/workflows/ci.yml` runs pytest, the quality gate, and the 3 Docker builds on every push.
 
 ---
-## 5-minute class demo
-1. MLflow UI: compare the 4 runs.  2. Dashboard: estimate a price.
-3. `python -m src.drift 3`: show the drift report.  4. `python -m src.retrain`: PROMOTED, v2 live.
-5. Show the green CI run.
-
----
-## Problems we hit and fixes
-
-| # | Problem | Cause | Fix |
-|---|---|---|---|
-| 1 | `pip install` fails while building numpy (`ptrdiff_t`, `FAILED ... string_ufuncs.cpp`) | Python 3.13: no prebuilt numpy 2.0.2, pip compiles it and fails | Use Python 3.11 (Step 0) |
-| 2 | MLflow: `Address already in use` port 5000 | Mac AirPlay Receiver, an old MLflow, or Docker uses 5000 | Run MLflow on 5001 and export `MLFLOW_TRACKING_URI` |
-| 3 | `ImportError: cannot import name 'add_features'` | File not saved (empty `features.py`) | Save all files (Cmd+S); check with `wc -c src/features.py` |
-| 4 | Pandera validation errors (`engine_cc`, year, engine range) | Raw data has strings and bad rows | Run `python -m src.make_batches` (cleans before splitting) |
-| 5 | Command fails after pasting | One command split over two lines | Paste each command on a single line |
-| 6 | Docker: cannot connect to daemon | Docker Desktop not running | Open Docker Desktop, wait until running |
-| 7 | Docker build: `reports` not found | Folder missing | `mkdir -p reports && touch reports/.keep` |
-| 8 | mlflow container crashes: `FallbackAsyncAdaptedQueuePool` | SQLAlchemy 2.1 breaks MLflow 2.22 | Keep `sqlalchemy==2.0.57` (pinned) |
-| 9 | `/reload` Internal Server Error or "alias not found" | MLflow down, or no model registered, or wrong MLflow URL | Start MLflow, run `src.register`, check `MLFLOW_TRACKING_URI`, then `/reload`. The response now shows the real reason |
-| 10 | Dashboard: `{"detail":"model not loaded"}` | API started before a model existed, or points at another MLflow | Register a model on the same MLflow the API uses, then POST `/reload` |
-| 11 | Dashboard refused on 8501 | Streamlit not running | Run `streamlit run dashboard/app.py` |
-| 12 | XGBoost fails in Docker | `libgomp1` missing in slim image | Already installed in `Dockerfile.api` |
-| 13 | Retrain says KEPT although drift is high | RMSE noisy on a small holdout | Decision uses MAE (`DECISION_METRIC` in `src/config.py`) |
-
-Quick checks: `lsof -i :5001` (who uses a port), `docker compose ps`, `docker compose logs mlflow`.
